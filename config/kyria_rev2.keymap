@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&trans>;
+            key-positions = <>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -19,7 +28,7 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
- &kp TAB   &kp P   &kp U   &sl 1  &kp KP_COMMA   &kp Q   &kp G   &kp C   &kp L   &kp M   &kp F  &kp RS(TAB)   &mo 2   &kp H   &kp I   &kp E   &kp A   &kp O   &kp D   &kp T   &kp R   &kp N   &kp S   &mo 2  &kp LCTRL   &kp K   &kp Z  &kp DOT  &kp LS(HASH)   &kp X  &kp LEFT_SHIFT  &trans  &kp RETURN  &kp SPACE   &kp J   &kp V   &kp W   &kp B   &kp Y  &kp RCTRL  &trans  &trans   &mo 3  &kp LEFT_SHIFT   &none  &kp RETURN  &kp SPACE   &mo 3  &trans  &trans
+ &kp TAB   &kp P   &kp U   &sl 1  &kp COMMA   &kp Q   &kp G   &kp C   &kp L   &kp M   &kp F  &kp RS(TAB)   &mo 2   &kp H   &kp I   &kp E   &kp A   &kp O   &kp D   &kp T   &kp R   &kp N   &kp S   &mo 2  &kp LCTRL   &kp K   &kp Z  &kp DOT  &kp LS(NON_US_HASH)   &kp X  &kp LEFT_SHIFT  &trans  &kp RETURN  &kp SPACE   &kp J   &kp V   &kp W   &kp B   &kp Y  &kp RCTRL  &kp K_MUTE  &kp LEFT_ALT   &mo 3  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp RETURN  &kp SPACE   &mo 3  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
