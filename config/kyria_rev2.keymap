@@ -42,7 +42,7 @@
 
         Symbols {
             bindings = <
- &kp LA(L)   &none  &kp LS(SLASH)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LS(GRAVE)  &kp RS(NUMBER_1)  &kp NON_US_BACKSLASH  &kp RS(NON_US_BACKSLASH)  &kp RS(NUMBER_0)  &kp RS(NUMBER_6)  &trans  &trans  &kp LS(NUMBER_7)  &kp LA(LS(NUMBER_7))  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp STAR  &kp RS(MINUS)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp SLASH  &kp RS(DOT)  &trans  &trans  &kp NON_US_HASH  &kp LS(NUMBER_4)  &kp LA(NON_US_BACKSLASH)  &kp LA(N)  &kp EQUAL  &trans  &trans  &trans  &trans  &kp RS(RBRC)  &kp RS(NUMBER_5)  &kp RS(NUMBER_2)  &kp RS(NON_US_HASH)  &kp RS(COMMA)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LA(L)   &none  &kp LS(SLASH)  &kp LA(LC(NUMBER_5))  &kp LA(NUMBER_6)  &kp LS(GRAVE)  &kp RS(NUMBER_1)  &kp NON_US_BACKSLASH  &kp RS(NON_US_BACKSLASH)  &kp RS(NUMBER_0)  &kp RS(NUMBER_6)  &trans  &trans  &kp LS(NUMBER_7)  &kp LA(LS(NUMBER_7))  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp STAR  &kp RS(MINUS)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp SLASH  &kp RS(DOT)  &trans  &trans  &kp NON_US_HASH  &kp LS(NUMBER_4)  &kp LA(NON_US_BACKSLASH)  &kp LA(LC(N))  &kp EQUAL  &trans  &trans  &trans  &trans  &kp RS(RBRC)  &kp RS(NUMBER_5)  &kp RS(NUMBER_2)  &kp RS(NON_US_HASH)  &kp RS(COMMA)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
