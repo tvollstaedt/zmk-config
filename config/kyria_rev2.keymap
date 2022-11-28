@@ -42,7 +42,7 @@
 
         Symbols {
             bindings = <
- &kp AT_SIGN  &trans  &kp LS(SLASH)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LS(GRAVE)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NUMBER_7)  &kp LS(LA(NUMBER_7))  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp LS(PLUS)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LA(L)   &none  &kp LS(SLASH)  &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LS(GRAVE)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NUMBER_7)  &kp LA(LC(NUMBER_7))  &kp LA(NUMBER_7)  &kp LA(NUMBER_0)  &kp STAR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NON_US_HASH  &kp LS(NUMBER_4)  &kp LA(NON_US_BACKSLASH)  &kp LA(N)  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
