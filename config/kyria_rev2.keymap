@@ -13,7 +13,7 @@
 
         new_combo {
             bindings = <&trans>;
-            key-positions = <>;
+            key-positions = <0>;
         };
     };
 
@@ -42,7 +42,7 @@
 
         Symbols {
             bindings = <
- &kp AT_SIGN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp AT_SIGN  &trans  &kp LS(SLASH)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LS(GRAVE)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NUMBER_7)  &kp LS(LA(NUMBER_7))  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp LS(PLUS)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
