@@ -16,8 +16,27 @@
         compatible = "zmk,combos";
 
         new_combo {
-            bindings = <&trans>;
-            key-positions = <0>;
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <13 3>;
+            layers = <0>;
+        };
+
+        combo_eu {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <14 3>;
+            layers = <0>;
+        };
+
+        combo_ou {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <17 3>;
+            layers = <0>;
+        };
+
+        combo_ss {
+            bindings = <&kp MINUS>;
+            key-positions = <3 22>;
+            layers = <0>;
         };
     };
 
@@ -32,16 +51,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
- &kp TAB   &kp P   &kp U   &sl 1  &kp COMMA   &kp Q   &kp G   &kp C   &kp L   &kp M   &kp F  &kp RS(TAB)   &mo 2   &kp H   &kp I   &kp E   &kp A   &kp O   &kp D   &kp T   &kp R   &kp N   &kp S   &mo 2  &kp LCTRL   &kp K   &kp Z  &kp DOT  &kp LS(NON_US_HASH)   &kp X  &kp LEFT_SHIFT  &trans  &kp RETURN  &kp SPACE   &kp J   &kp V   &kp W   &kp B   &kp Y  &kp RCTRL  &kp K_MUTE  &kp LEFT_ALT   &mo 3  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp RETURN  &kp SPACE   &mo 3  &trans  &trans
+ &kp TAB   &kp P   &kp U   &none  &kp COMMA   &kp Q   &kp G   &kp C   &kp L   &kp M   &kp F  &kp RS(TAB)   &mo 1   &kp H   &kp I   &kp E   &kp A   &kp O   &kp D   &kp T   &kp R   &kp N   &kp S   &mo 1  &kp LCTRL   &kp K   &kp Z  &kp DOT  &kp LS(NON_US_HASH)   &kp X  &kp LEFT_SHIFT  &trans  &kp RETURN  &kp SPACE   &kp J   &kp V   &kp W   &kp B   &kp Y  &kp RCTRL  &kp K_MUTE  &kp LEFT_ALT   &mo 2  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp RETURN  &kp SPACE   &mo 2  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
-        Diacs {
-            bindings = <
- &trans  &trans  &kp LEFT_BRACKET   &to 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
 
         Symbols {
@@ -52,13 +65,13 @@
 
         Navigation {
             bindings = <
- &trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &trans  &kp KP_ASTERISK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS  &trans  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_COMMA  &trans  &trans  &trans  &kp TAB  &kp INSERT  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &kp KP_DIVIDE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &trans  &trans  &tog 4  &trans  &trans  &trans  &trans  &trans  &trans  &tog 4  &trans
+ &trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &trans  &kp KP_ASTERISK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS  &trans  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_COMMA  &trans  &trans  &trans  &kp TAB  &kp INSERT  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &kp KP_DIVIDE  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &trans  &trans  &tog 3  &trans  &trans  &trans  &trans  &trans  &trans  &tog 3  &trans
             >;
         };
 
         Settings {
             bindings = <
- &bt BT_CLR  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &bt BT_CLR  &bt BT_NXT  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &bt BT_NXT  &bt BT_PRV   &none   &none  &rgb_ug RGB_TOG   &none  &out OUT_TOG  &reset  &ext_power EP_TOG  &ext_power EP_TOG  &reset  &out OUT_TOG   &none  &rgb_ug RGB_TOG   &none   &none  &bt BT_PRV   &none  &tog 4   &none  &reset  &bootloader  &bootloader  &reset   &none  &tog 4   &none
+ &bt BT_CLR  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &bt BT_CLR  &bt BT_NXT  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &bt BT_NXT  &bt BT_PRV   &none   &none  &rgb_ug RGB_TOG   &none  &out OUT_TOG  &reset  &ext_power EP_TOG  &ext_power EP_TOG  &reset  &out OUT_TOG   &none  &rgb_ug RGB_TOG   &none   &none  &bt BT_PRV   &none  &tog 3   &none  &reset  &bootloader  &bootloader  &reset   &none  &tog 3   &none
             >;
         };
     };
