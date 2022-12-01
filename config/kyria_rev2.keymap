@@ -18,24 +18,28 @@
         new_combo {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <13 3>;
+            slow-release;
             layers = <0>;
         };
 
         combo_eu {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <14 3>;
+            slow-release;
             layers = <0>;
         };
 
         combo_ou {
             bindings = <&kp SEMICOLON>;
             key-positions = <17 3>;
+            slow-release;
             layers = <0>;
         };
 
         combo_ss {
             bindings = <&kp MINUS>;
             key-positions = <3 22>;
+            slow-release;
             layers = <0>;
         };
     };
