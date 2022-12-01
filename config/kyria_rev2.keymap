@@ -17,8 +17,8 @@
 
         new_combo {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <13 3>;
-            slow-release;
+            key-positions = <3 16>;
+            timeout-ms = <500>;
             layers = <0>;
         };
 
