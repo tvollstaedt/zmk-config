@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: bobobo1618
-      url-base: https://github.com/bobobo1618/zephyr
+      url-base: https://github.com/bobobo1618/zephyr.git
   projects:
     - name: zmk-bobobo1618
       remote: bobobo1618
