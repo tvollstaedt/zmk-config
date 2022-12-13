@@ -8,6 +8,5 @@ manifest:
     - name: zmk-zephyr
       remote: infused-kim
       revision: v2.5.0+zmk-fixes
-      import: app/west.yml
   self:
     path: config
