@@ -2,12 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: infused-kim
-      url-base: https://github.com/infused-kim
+    - name: bobobo1618
+      url-base: https://github.com/bobobo1618/zephyr
   projects:
-    - name: zmk-zephyr
-      remote: infused-kim
-      revision: v3.0.0+zmk-fixes+kim-fixes
+    - name: zmk-bobobo1618
+      remote: bobobo1618
+      revision: fix-oled
       clone-depth: 1
+      import: app/west.yml
   self:
     path: config
