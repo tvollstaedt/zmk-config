@@ -8,9 +8,6 @@ manifest:
     - name: zmk-zephyr
       remote: infused-kim
       revision: v3.0.0+zmk-fixes+kim-fixes
-    - name: zmk-zephyr
-      remote: infused-kim
-      revision: v2.5.0+zmk-fixes+kim-fixes
       clone-depth: 1
   self:
     path: config
