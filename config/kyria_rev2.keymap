@@ -15,8 +15,8 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
-            bindings = <&kp DOUBLE_QUOTES>;
+        combo_ae {
+            bindings = <&replace_with_ae>;
             key-positions = <3 16>;
             timeout-ms = <500>;
             layers = <0>;
@@ -44,6 +44,17 @@
         };
     };
 
+    macros {
+        replace_with_ae: replace_with_ae {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp BACKSPACE &kp DOUBLE_QUOTES>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -58,7 +69,7 @@
  &kp TAB   &kp P   &kp U   &none  &kp COMMA   &kp Q   &kp G   &kp C   &kp L   &kp M   &kp F  &kp RS(TAB)   &mo 1   &kp H   &kp I   &kp E   &kp A   &kp O   &kp D   &kp T   &kp R   &kp N   &kp S   &mo 1  &kp LCTRL   &kp K   &kp Z  &kp DOT  &kp LS(NON_US_HASH)   &kp X  &kp LEFT_SHIFT  &trans  &kp RETURN  &kp SPACE   &kp J   &kp V   &kp W   &kp B   &kp Y  &kp RCTRL  &kp K_MUTE  &kp LEFT_ALT   &mo 2  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp RETURN  &kp SPACE   &mo 2  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_UP PG_DN>;
         };
 
         Symbols {
